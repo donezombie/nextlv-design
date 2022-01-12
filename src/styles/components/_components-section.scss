@@ -1,0 +1,29 @@
+.components-section {
+  &__label {
+    font-size: 3rem;
+  }
+  &__description {
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  .button-components {
+    .card {
+      border: 1px solid var(--grey);
+      padding: 2rem;
+      margin: 1rem 2rem;
+      .version {
+        text-align: right;
+        font-size: 1.4rem;
+      }
+      .heading {
+        font-weight: bold;
+      }
+      .content {
+        padding: 2rem 0;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

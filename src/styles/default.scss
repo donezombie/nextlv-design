@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  // Convert 1rem = 10px
+  // Convert to % 10/16 * 100 = 62.5%
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.heading {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+// Padding
+// PL
+.pl-5 {
+  padding-left: 0.5rem;
+}
+.pl-10 {
+  padding-left: 1rem;
+}
+.pl-15 {
+  padding-left: 1.5rem;
+}
+.pl-20 {
+  padding-left: 2rem;
+}
+.pl-25 {
+  padding-left: 2.5rem;
+}
+// PR
+.pr-5 {
+  padding-right: 0.5rem;
+}
+.pr-10 {
+  padding-right: 1rem;
+}
+.pr-15 {
+  padding-right: 1.5rem;
+}
+.pr-20 {
+  padding-right: 2rem;
+}
+.pr-25 {
+  padding-right: 2.5rem;
+}
+// PX
+.px-5{
+  padding: 0 0.5rem;
+}
+.px-10{
+  padding: 0 1rem;
+}
+.px-15{
+  padding: 0 1.5rem;
+}
+.px-20{
+  padding: 0 2rem;
+}
+.px-25{
+  padding: 0 2.5rem;
+}
+// PY
+.py-5{
+  padding: 0.5rem 0;
+}
+.py-10{
+  padding: 1rem 0;
+}
+.py-15{
+  padding: 1.5rem 0;
+}
+.py-20{
+  padding: 2rem 0;
+}
+.py-25{
+  padding: 2.5rem 0;
+}
+// Margin
+// ml
+.ml-5 {
+  margin-left: 0.5rem;
+}
+.ml-10 {
+  margin-left: 1rem;
+}
+.ml-15 {
+  margin-left: 1.5rem;
+}
+.ml-20 {
+  margin-left: 2rem;
+}
+.ml-25 {
+  margin-left: 2.5rem;
+}
+// mr
+.mr-5 {
+  margin-right: 0.5rem;
+}
+.mr-10 {
+  margin-right: 1rem;
+}
+.mr-15 {
+  margin-right: 1.5rem;
+}
+.mr-20 {
+  margin-right: 2rem;
+}
+.mr-25 {
+  margin-right: 2.5rem;
+}
+// mx
+.mx-5{
+  margin: 0 0.5rem;
+}
+.mx-10{
+  margin: 0 1rem;
+}
+.mx-15{
+  margin: 0 1.5rem;
+}
+.mx-20{
+  margin: 0 2rem;
+}
+.mx-25{
+  margin: 0 2.5rem;
+}
+// my
+.my-5{
+  margin: 0.5rem 0;
+}
+.my-10{
+  margin: 1rem 0;
+}
+.my-15{
+  margin: 1.5rem 0;
+}
+.my-20{
+  margin: 2rem 0;
+}
+.my-25{
+  margin: 2.5rem 0;
+}
