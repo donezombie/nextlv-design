@@ -9,12 +9,40 @@
     background: var(--blue-border);
     transition: all 0.2s ease;
   }
+  // Outline
+  &.outline {
+    background: var(--white);
+    border: 1px solid var(--blue-border);
+    color: var(--blue-border);
+    &:hover {
+      background: var(--blue-border);
+      border: 1px solid var(--blue-border);
+      color: var(--white);
+      transition: all 0.2s ease;
+    }
+  }
+  // Outline
+  &.dashed {
+    background: var(--white);
+    border: 1px dashed var(--blue-border);
+    color: var(--blue-border);
+    &:hover {
+      background: var(--blue-border);
+      border: 1px dashed var(--blue-border);
+      color: var(--white);
+      transition: all 0.2s ease;
+    }
+  }
+  // Block
+  &.block {
+    width: 100%;
+  }
 }
 
 .btn-success {
   background: var(--green);
   border: 1px solid var(--green);
-  color: var(--black);
+  color: var(--white);
   padding: 1rem 2rem;
   font-size: 1.4rem;
   cursor: pointer;
@@ -22,37 +50,33 @@
     background: var(--green-border);
     transition: all 0.2s ease;
   }
-  //
-  &.btn-dashed {
+  // Outline
+  &.outline {
     background: var(--white);
-    border: 1px dashed var(--green-border);
+    border: 1px solid var(--green);
     color: var(--green-border);
     &:hover {
-      background: var(--white);
-      border: 1px dashed var(--green-border);
-      color: var(--green-border);
+      background: var(--green);
+      border: 1px solid var(--green);
+      color: var(--white);
       transition: all 0.2s ease;
     }
   }
-  &.btn-default {
+  // Dashed
+  &.dashed {
     background: var(--white);
-    border: 1px solid var(--green-border);
+    border: 1px solid var(--green);
     color: var(--green-border);
     &:hover {
-      background: var(--white);
-      border: 1px solid var(--green-border);
-      color: var(--green-border);
+      background: var(--green);
+      border: 1px solid var(--green);
+      color: var(--white);
       transition: all 0.2s ease;
     }
   }
-
-  &.btn-link,
-  &.btn-text {
-    color: var(--green-border);
-    &:hover {
-      background: transparent;
-      color: var(--green);
-    }
+  // Block
+  &.block {
+    width: 100%;
   }
 }
 
@@ -67,37 +91,33 @@
     background: var(--yellow-border);
     transition: all 0.2s ease;
   }
-  //
-  &.btn-dashed {
-    background: var(--white);
-    border: 1px dashed var(--yellow);
-    color: var(--yellow);
-    &:hover {
-      background: var(--white);
-      border: 1px dashed var(--yellow-border);
-      color: var(--yellow-border);
-      transition: all 0.2s ease;
-    }
-  }
-  &.btn-default {
+  // Outline
+  &.outline {
     background: var(--white);
     border: 1px solid var(--yellow);
-    color: var(--yellow);
+    color: var(--yellow-border);
     &:hover {
-      background: var(--white);
-      border: 1px solid var(--yellow-border);
-      color: var(--yellow-border);
+      background: var(--yellow);
+      border: 1px solid var(--yellow);
+      color: var(--black);
       transition: all 0.2s ease;
     }
   }
-
-  &.btn-link,
-  &.btn-text {
+  // Dashed
+  &.dashed {
+    background: var(--white);
+    border: 1px dashed var(--yellow);
     color: var(--yellow-border);
     &:hover {
-      background: transparent;
-      color: var(--yellow);
+      background: var(--yellow);
+      border: 1px dashed var(--yellow);
+      color: var(--black);
+      transition: all 0.2s ease;
     }
+  }
+  // Block
+  &.block {
+    width: 100%;
   }
 }
 
@@ -112,77 +132,76 @@
     background: var(--red-border);
     transition: all 0.2s ease;
   }
-  //
-  &.btn-primary,
-  &.btn-sucess,
-  &.btn-warning {
-    background: var(--red);
-    border: 1px solid var(--red);
-    color: var(--white);
-    &:hover {
-      background: var(--red-border);
-      transition: all 0.2s ease;
-      color: var(--white);
-    }
-  }
-  &.btn-dashed {
-    background: var(--white);
-    border: 1px dashed var(--red);
-    color: var(--red);
-    &:hover {
-      background: var(--white);
-      border: 1px dashed var(--red-border);
-      color: var(--red-border);
-      transition: all 0.2s ease;
-    }
-  }
-  &.btn-default {
+  // Outline
+  &.outline {
     background: var(--white);
     border: 1px solid var(--red);
-    color: var(--red);
-    &:hover {
-      background: var(--white);
-      border: 1px solid var(--red-border);
-      color: var(--red-border);
-      transition: all 0.2s ease;
-    }
-  }
-
-  &.btn-link,
-  &.btn-text {
     color: var(--red-border);
     &:hover {
-      background: transparent;
-      color: var(--red);
+      background: var(--red);
+      border: 1px solid var(--red);
+      color: var(--white);
+      transition: all 0.2s ease;
     }
+  }
+  // Dashed
+  &.dashed {
+    background: var(--white);
+    border: 1px dashed var(--red);
+    color: var(--red-border);
+    &:hover {
+      background: var(--red);
+      border: 1px dashed var(--red);
+      color: var(--white);
+      transition: all 0.2s ease;
+    }
+  }
+  // Block
+  &.block {
+    width: 100%;
   }
 }
 
 .btn-default {
-  background: var(--white);
-  color: var(--black);
+  background: var(--black);
+  color: var(--white);
   border: 1px solid var(--black);
   padding: 1rem 2rem;
   font-size: 1.4rem;
   cursor: pointer;
   &:hover {
-    color: var(--blue);
+    background: var(--black-dark);
+    color: var(--black);
     border: 1px solid var(--blue);
     transition: all 0.2s ease;
   }
-}
-
-.btn-dashed {
-  background: var(--white);
-  color: var(--black);
-  border: 1px dashed var(--black);
-  padding: 1rem 2rem;
-  font-size: 1.4rem;
-  cursor: pointer;
-  &:hover {
-    color: var(--blue);
-    border: 1px dashed var(--blue);
-    transition: all 0.2s ease;
+  // Outline
+  &.outline {
+    background: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
+    &:hover {
+      background: var(--black);
+      border: 1px solid (--black);
+      color: var(--white);
+      transition: all 0.2s ease;
+    }
+  }
+  // Dashed
+  &.dashed {
+    background: var(--white);
+    border: 1px dashed var(--black);
+    color: var(--black);
+    &:hover {
+      background: var(--black);
+      border: 1px dashed (--black);
+      color: var(--white);
+      transition: all 0.2s ease;
+    }
+  }
+  // Block
+  &.block {
+    width: 100%;
   }
 }
 
@@ -193,6 +212,10 @@
   padding: 1rem 2rem;
   font-size: 1.4rem;
   cursor: pointer;
+  // Block
+  &.block {
+    width: 100%;
+  }
 }
 
 .btn-link {
@@ -206,21 +229,21 @@
     color: var(--blue);
     transition: all 0.2s ease;
   }
+  // Block
+  &.block {
+    width: 100%;
+  }
 }
 
+// Disabled
 .btn-primary[disabled],
 .btn-success[disabled],
 .btn-danger[disabled],
-.btn-default[disabled],
-.btn-dashed[disabled] {
+.btn-default[disabled] {
   background: var(--grey-light);
   border: 1px solid var(--grey);
   color: var(--black-dark);
   cursor: not-allowed;
-}
-
-.btn-dashed[disabled] {
-  border: 1px dashed var(--grey);
 }
 
 .btn-text[disabled],
@@ -228,6 +251,46 @@
   color: var(--black-dark);
   cursor: not-allowed;
 }
+// Close
+.close {
+  width: 1.5em;
+  height: 1.5em;
+  border: 0;
+  cursor: pointer;
+  background: transparent url("/public/assets/icon/close.svg") center/1em auto
+    no-repeat;
+}
+// Loading
+.loading {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0 0.8rem;
+  border: 0;
+  cursor: pointer;
+  svg {
+    animation: loadingCircle 1s infinite linear;
+    -webkit-animation: loadingCircle 1s infinite linear;
+    @keyframes loadingCircle {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    // Webkit
+    @-webkit-keyframes loadingCircle {
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+// Size
 .button-size-large {
   padding: 1.5rem 2.5rem;
 }

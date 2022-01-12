@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../button/Button";
 import Card from "./Card";
 
 const Warning = (props) => {
@@ -12,23 +13,19 @@ const Warning = (props) => {
       <div className="button-components__warning">
         <div className="row">
           <div className="col-4 py-10">
-            <button className="btn-primary btn-warning">Primary Button</button>
+            <Button variant="warning">Warning Button</Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-default btn-warning">Default Button</button>
+            <Button variant="warning" outline>
+              Outline Button
+            </Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-dashed btn-warning">Dashed Button</button>
-          </div>
-
-          <div className="col-4 py-10">
-            <button className="btn-text btn-warning">Text Button</button>
-          </div>
-
-          <div className="col-4 py-10">
-            <button className="btn-link btn-warning">Link Button</button>
+            <Button variant="warning" dashed>
+              Dashed Button
+            </Button>
           </div>
         </div>
       </div>

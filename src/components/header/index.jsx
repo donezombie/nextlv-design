@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../button/Button";
 
 const Header = (props) => {
   //! State
@@ -10,21 +11,25 @@ const Header = (props) => {
     <div className="header">
       <h1 className="header__banner">UI - Component of framework!</h1>
 
-      <p className="header__description">
-        Framework Design, enjoy!
-      </p>
+      <p className="header__description">Framework Design, enjoy!</p>
 
       <div className="header__button">
         <a href="#section">
-          <button className="btn-primary"> Docs</button>
+          <Button variant="primary" size="large" outline>
+            Docs
+          </Button>
         </a>
 
         <a href="#component">
-          <button className="btn-success"> Components</button>
+          <Button variant="success" size="large" outline>
+            Compontents
+          </Button>
         </a>
-          
+
         <a href="#section">
-          <button className="btn-danger"> Report</button>
+          <Button variant="danger" size="large" outline>
+            Report
+          </Button>
         </a>
       </div>
     </div>

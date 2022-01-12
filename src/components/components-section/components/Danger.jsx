@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../button/Button";
 import Card from "./Card";
 
 const Danger = (props) => {
@@ -12,28 +13,24 @@ const Danger = (props) => {
       <div className="button-components__danger">
         <div className="row">
           <div className="col-4 py-10">
-            <button className="btn-primary btn-danger">Primary Button</button>
+            <Button variant="danger">Danger Button</Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-default btn-danger">Default Button</button>
+            <Button variant="danger" outline>
+              Outline Button
+            </Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-dashed btn-danger">Dashed Button</button>
-          </div>
-
-          <div className="col-4 py-10">
-            <button className="btn-text btn-danger">Text Button</button>
-          </div>
-          
-          <div className="col-4 py-10">
-            <button className="btn-link btn-danger">Link Button</button>
+            <Button variant="danger" dashed>
+              Outline Button
+            </Button>
           </div>
         </div>
       </div>
     </Card>
-  )
-}
+  );
+};
 
 export default Danger;

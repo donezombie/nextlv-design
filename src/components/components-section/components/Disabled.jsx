@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../button/Button";
 import Card from "./Card";
 
 const Disabled = (props) => {
@@ -12,43 +13,32 @@ const Disabled = (props) => {
       <div className="button-components__disabled">
         <div className="row">
           <div className="col-6 py-10">
-            <button className="btn-primary">Primary Button</button>
+            <Button variant="primary">Primary Button</Button>
           </div>
 
           <div className="col-6 py-10">
-            <button className="btn-primary" disabled>Primary Button(disbled)</button>
+            <Button variant="primary" disabled>
+              Primary Button(disabled)
+            </Button>
+          </div>
+          <div className="col-6 py-10">
+            <Button variant="text">Text Button</Button>
+          </div>
+
+          <div className="col-6 py-10">
+            <Button variant="text" disabled>
+              Text Button(disbled)
+            </Button>
           </div>
           {/*  */}
           <div className="col-6 py-10">
-            <button className="btn-default">Default Button</button>
+            <Button variant="link">Link Button</Button>
           </div>
 
           <div className="col-6 py-10">
-            <button className="btn-default" disabled>Default Button(disbled)</button>
-          </div>
-          {/*  */}
-          <div className="col-6 py-10">
-            <button className="btn-dashed" >Dashed Button</button>
-          </div>
-
-          <div className="col-6 py-10">
-            <button className="btn-dashed" disabled>Dashed Button(disbled)</button>
-          </div>
-          {/*  */}
-          <div className="col-6 py-10">
-            <button className="btn-text">Text Button</button>
-          </div>
-
-          <div className="col-6 py-10">
-            <button className="btn-text" disabled>Text Button(disbled)</button>
-          </div>
-          {/*  */}
-          <div className="col-6 py-10">
-            <button className="btn-link">Link Button</button>
-          </div>
-
-          <div className="col-6 py-10">
-            <button className="btn-link" disabled>Link Button(disbled)</button>
+            <Button variant="link" disabled>
+              Link Button(disbled)
+            </Button>
           </div>
         </div>
       </div>

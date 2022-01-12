@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../button/Button";
 import Card from "./Card";
 
 const Example = (props) => {
@@ -12,23 +13,27 @@ const Example = (props) => {
       <div className="button-components__example">
         <div className="row">
           <div className="col-4 py-10">
-            <button className="btn-primary">Primary Button</button>
+            <Button variant="primary">Primary Button</Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-default">Default Button</button>
+            <Button variant="primary" outline>
+              Outline Button
+            </Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-dashed">Dashed Button</button>
+            <Button variant="primary" dashed>
+              Dashed Button
+            </Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-text">Text Button</button>
+            <Button variant="text">Text Button</Button>
           </div>
-          
+
           <div className="col-4 py-10">
-            <button className="btn-link">Link Button</button>
+            <Button variant="link">Link Button</Button>
           </div>
         </div>
       </div>

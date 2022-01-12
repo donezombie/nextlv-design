@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../button/Button";
 import Card from "./Card";
 
 const Size = (props) => {
@@ -13,61 +14,61 @@ const Size = (props) => {
         {/* SMALL */}
         <div className="row">
           <div className="col-4 py-10">
-            <button className="btn-primary button-size-small">
+            <Button variant="primary" size="small">
               Small Button
-            </button>
+            </Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-default button-size-small">
+            <Button variant="success" size="small">
               Small Button
-            </button>
+            </Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-dashed button-size-small">
+            <Button variant="danger" size="small">
               Small Button
-            </button>
+            </Button>
           </div>
         </div>
         {/* DEFAULT */}
         <div className="row">
           <div className="col-4 py-10">
-            <button className="btn-primary button-size-default">
+            <Button variant="primary" size="default">
               Default Button
-            </button>
+            </Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-default button-size-default">
+            <Button variant="success" size="default">
               Default Button
-            </button>
+            </Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-dashed button-size-default">
+            <Button variant="danger" size="default">
               Default Button
-            </button>
+            </Button>
           </div>
         </div>
         {/* LARGE */}
         <div className="row">
           <div className="col-4 py-10">
-            <button className="btn-primary button-size-large">
+            <Button variant="primary" size="large">
               Large Button
-            </button>
+            </Button>
           </div>
 
           <div className="col-4 py-10">
-            <button className="btn-default button-size-large">
+            <Button variant="success" size="large">
               Large Button
-            </button>
+            </Button>
           </div>
-          
+
           <div className="col-4 py-10">
-            <button className="btn-dashed button-size-large">
+            <Button variant="danger" size="large">
               Large Button
-            </button>
+            </Button>
           </div>
         </div>
       </div>
