@@ -1,12 +1,13 @@
 import React from "react";
-import Close from "./components/Close";
-import Danger from "./components/Danger";
-import Disabled from "./components/Disabled";
-import Example from "./components/Example";
-import Loading from "./components/Loading";
-import Size from "./components/Size";
-import Success from "./components/Success";
-import Warning from "./components/Warning";
+import Close from "./components/buttons/Close";
+import Danger from "./components/buttons/Danger";
+import Disabled from "./components/buttons/Disabled";
+import Example from "./components/buttons/Example";
+import Group from "./components/buttons/Group";
+import Loading from "./components/buttons/Loading";
+import Size from "./components/buttons/Size";
+import Success from "./components/buttons/Success";
+import Warning from "./components/buttons/Warning";
 
 const ButtonComponents = (props) => {
   //! State
@@ -22,6 +23,7 @@ const ButtonComponents = (props) => {
           <Example />
           <Disabled />
           <Size />
+          <Group/>
         </div>
         <div className="col-6">
           <Danger />

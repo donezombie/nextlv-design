@@ -1,30 +1,30 @@
 import React from "react";
-import Button from "../../button/Button";
+import Button from "../../../button/Button";
 import Card from "./Card";
 
-const Warning = (props) => {
+const Danger = (props) => {
   //! State
 
   //! Function
 
   //! Render
   return (
-    <Card label="Warning">
-      <div className="button-components__warning">
+    <Card label="Danger">
+      <div className="button-components__danger">
         <div className="row">
           <div className="col-4 py-10">
-            <Button variant="warning">Warning Button</Button>
+            <Button variant="danger">Danger Button</Button>
           </div>
 
           <div className="col-4 py-10">
-            <Button variant="warning" outline>
+            <Button variant="danger" outline>
               Outline Button
             </Button>
           </div>
 
           <div className="col-4 py-10">
-            <Button variant="warning" dashed>
-              Dashed Button
+            <Button variant="danger" dashed>
+              Outline Button
             </Button>
           </div>
         </div>
@@ -33,4 +33,4 @@ const Warning = (props) => {
   );
 };
 
-export default Warning;
+export default Danger;
