@@ -17,9 +17,7 @@ const Danger = (props) => {
           </div>
 
           <div className="col-4 py-10">
-            <Button variant="danger" outline>
-              Outline Button
-            </Button>
+            <Button variant="danger">Outline Button</Button>
           </div>
 
           <div className="col-4 py-10">
