@@ -14,10 +14,10 @@ const Group = (props) => {
       <div className="button-group-checkbox-radio">
         <div className="row">
           <div className="col">
-            <ButtonGroup>
+            <ButtonGroup size="small">
               <Button>One</Button>
               <Button>Two</Button>
-              <Button> Three</Button>
+              <Button>Three</Button>
             </ButtonGroup>
           </div>
         </div>

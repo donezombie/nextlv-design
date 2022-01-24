@@ -10,7 +10,11 @@ html {
   // Convert to % 10/16 * 100 = 62.5%
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
+  line-height: 1.5;
+}
+textarea {
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 .container {
   position: relative;
@@ -56,35 +60,35 @@ body {
   padding-right: 2.5rem;
 }
 // PX
-.px-5{
+.px-5 {
   padding: 0 0.5rem;
 }
-.px-10{
+.px-10 {
   padding: 0 1rem;
 }
-.px-15{
+.px-15 {
   padding: 0 1.5rem;
 }
-.px-20{
+.px-20 {
   padding: 0 2rem;
 }
-.px-25{
+.px-25 {
   padding: 0 2.5rem;
 }
 // PY
-.py-5{
+.py-5 {
   padding: 0.5rem 0;
 }
-.py-10{
+.py-10 {
   padding: 1rem 0;
 }
-.py-15{
+.py-15 {
   padding: 1.5rem 0;
 }
-.py-20{
+.py-20 {
   padding: 2rem 0;
 }
-.py-25{
+.py-25 {
   padding: 2.5rem 0;
 }
 // Margin
@@ -121,34 +125,34 @@ body {
   margin-right: 2.5rem;
 }
 // mx
-.mx-5{
+.mx-5 {
   margin: 0 0.5rem;
 }
-.mx-10{
+.mx-10 {
   margin: 0 1rem;
 }
-.mx-15{
+.mx-15 {
   margin: 0 1.5rem;
 }
-.mx-20{
+.mx-20 {
   margin: 0 2rem;
 }
-.mx-25{
+.mx-25 {
   margin: 0 2.5rem;
 }
 // my
-.my-5{
+.my-5 {
   margin: 0.5rem 0;
 }
-.my-10{
+.my-10 {
   margin: 1rem 0;
 }
-.my-15{
+.my-15 {
   margin: 1.5rem 0;
 }
-.my-20{
+.my-20 {
   margin: 2rem 0;
 }
-.my-25{
+.my-25 {
   margin: 2.5rem 0;
 }
