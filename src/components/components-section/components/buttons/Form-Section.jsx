@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../../button/Button";
 import Form from "../../../form/Form";
 import FormGroup from "../../../form/FormGroup";
 import SelectOptions from "../../../form/SelectOptions";
 import Input from "../../../input/Input";
 import Label from "../../../label/Label";
+import Modal from "../../../modal/Modal";
+import ModalBody from "../../../modal/ModalBody";
+import ModalFooter from "../../../modal/ModalFooter";
+import ModalHeader from "../../../modal/ModalHeader";
+import Table from "../../../table/Table";
 import Card from "./Card";
 
 const FormSection = (props) => {
@@ -17,6 +22,8 @@ const FormSection = (props) => {
     { value: "strawberry2", label: "Strawberry2" },
     { value: "vanilla2", label: "Vanilla2" },
   ];
+
+  const [open, setOpen] = useState(false);
 
   //! Function
 
@@ -85,6 +92,73 @@ const FormSection = (props) => {
         <FormGroup>
           <SelectOptions options={options} isMulti searchable />
         </FormGroup>
+
+        {/* TABLE */}
+        <Label>Table</Label>
+        <Table reponsive>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </Table>
+        <Label>Modal</Label>
+        <Button
+          variant="primary"
+          onClick={(e) => {
+            e.preventDefault();
+            setOpen(true);
+          }}
+        >
+          Modal
+        </Button>
+        <Modal open={open}>
+          <ModalHeader
+            closeTag
+            onClick={(e) => {
+              e.preventDefault();
+              setOpen(false);
+            }}
+          >
+            Header Title
+          </ModalHeader>
+          <ModalBody>asdhjgafdajsdgfasdghu</ModalBody>
+          <ModalFooter>
+            <Button>Submit</Button>
+            <Button
+              variant="default"
+              onClick={(e) => {
+                e.preventDefault();
+                setOpen(false);
+              }}
+            >
+              Close
+            </Button>
+          </ModalFooter>
+        </Modal>
         <Button>Submit</Button>
       </Form>
     </Card>

@@ -1,0 +1,86 @@
+.table,
+.table-bordered,
+.table-borderless,
+.table-dark,
+.table-striped {
+  margin: 2rem 0;
+  width: 100%;
+  border-collapse: collapse;
+  thead {
+    text-align: left;
+    border-bottom: 1px solid var(--black);
+  }
+  tbody {
+    text-align: left;
+  }
+}
+// Hover
+.hover {
+  tbody {
+    tr:hover {
+      background-color: var(--grey-light);
+    }
+  }
+}
+
+// Reponsive
+.table-reponsive {
+  overflow-x: auto;
+}
+.table {
+  tbody {
+    tr {
+      border-bottom: 1px solid var(--grey);
+    }
+    tr:last-child {
+      border: none;
+    }
+  }
+}
+
+.table-borderless {
+  thead {
+    border: none;
+  }
+}
+
+.table-dark {
+  thead {
+    border-bottom: 1px solid (var(--white));
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid var(--grey);
+    }
+    tr:last-child {
+      border: none;
+    }
+  }
+}
+
+.table-striped {
+  tbody {
+    tr:nth-of-type(odd) {
+      background-color: var(--grey-light);
+    }
+  }
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.8rem 0.8rem;
+}
+.table-bordered > :not(caption) > * > * {
+  border: 1px solid var(--grey-light);
+  padding: 0.8rem 0.8rem;
+}
+.table-borderless > :not(caption) > * > * {
+  padding: 0.8rem 0.8rem;
+}
+.table-dark > :not(caption) > * > * {
+  color: var(--white);
+  background-color: var(--black);
+  padding: 0.8rem 0.8rem;
+}
+.table-striped > :not(caption) > * > * {
+  padding: 0.8rem 0.8rem;
+}
