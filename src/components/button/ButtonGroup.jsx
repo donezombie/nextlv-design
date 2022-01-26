@@ -1,5 +1,11 @@
 import classNames from "classnames";
 import React, { useMemo } from "react";
+import PropTypes from "prop-types";
+const propTypes = {
+  children: PropTypes.any,
+  className: PropTypes.string,
+  size: PropTypes.oneOf(["large", "default", "small"]),
+};
 
 const ButtonGroup = ({ children, className = "", size = "" }) => {
   //! State
@@ -14,4 +20,5 @@ const ButtonGroup = ({ children, className = "", size = "" }) => {
   return <div className={classNames(className, typeButton)}>{children}</div>;
 };
 
+ButtonGroup.propTypes = propTypes;
 export default ButtonGroup;

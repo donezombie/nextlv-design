@@ -1,5 +1,29 @@
 import React, { useMemo, useState } from "react";
 import classNames from "classnames";
+import PropTypes from "prop-types";
+const propTypes = {
+  className: PropTypes.string,
+  loading: PropTypes.bool,
+  style: PropTypes.func,
+  outline: PropTypes.bool,
+  disabled: PropTypes.bool,
+  dashed: PropTypes.bool,
+  block: PropTypes.bool,
+  close: PropTypes.bool,
+  variant: PropTypes.oneOf([
+    "primary",
+    "success",
+    "warning",
+    "danger",
+    "default",
+    "text",
+    "link",
+  ]),
+  size: PropTypes.oneOf(["large", "default", "small"]),
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  type: PropTypes.string,
+};
+
 const Button = ({
   className = "",
   loading = false,
@@ -12,6 +36,7 @@ const Button = ({
   children,
   variant = "primary",
   size = "",
+  type = "button",
   ...rest
 }) => {
   //! State
@@ -47,6 +72,7 @@ const Button = ({
     <button
       className={classNames(className, typeButton)}
       style={style}
+      type={type}
       {...rest}
       disabled={disabled}
     >
@@ -56,4 +82,5 @@ const Button = ({
   );
 };
 
+Button.propTypes = propTypes;
 export default Button;

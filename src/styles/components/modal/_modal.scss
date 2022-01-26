@@ -15,6 +15,15 @@
     margin: 1rem;
     border-radius: 0.6rem;
     background-color: var(--white);
+    animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    @keyframes moveUp {
+      0% {
+        transform: translateY(150px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
   }
   &__header {
     display: flex;
@@ -38,7 +47,7 @@
   &__footer:only-child {
     border-bottom: none;
   }
-  &__footer> * {
+  &__footer > * {
     margin: 0.25rem;
   }
   &__body {

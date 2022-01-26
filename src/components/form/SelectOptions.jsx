@@ -2,6 +2,18 @@ import React, { Fragment, useMemo } from "react";
 import Select from "react-select";
 import classNames from "classnames";
 import makeAnimated from "react-select/animated";
+import PropTypes from "prop-types";
+const propTypes = {
+  className: PropTypes.string,
+  loading: PropTypes.bool,
+  disabled: PropTypes.bool,
+  clearable: PropTypes.bool,
+  searchable: PropTypes.bool,
+  isRtl: PropTypes.bool,
+  isMulti: PropTypes.bool,
+  defaultValue: PropTypes.string,
+  options: PropTypes.array,
+};
 
 const SelectOptions = (props) => {
   const {
@@ -43,4 +55,5 @@ const SelectOptions = (props) => {
   );
 };
 
+SelectOptions.propTypes = propTypes;
 export default SelectOptions;

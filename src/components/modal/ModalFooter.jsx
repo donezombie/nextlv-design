@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 const propTypes = {
   className: PropTypes.string,
-  children: PropTypes.element,
+  children: PropTypes.any,
 };
 
 const ModalFooter = ({ className, children }) => {

@@ -5,7 +5,7 @@ import Button from "../button/Button";
 
 const propTypes = {
   className: PropTypes.string,
-  children: PropTypes.element,
+  children: PropTypes.any,
   closeTag: PropTypes.bool,
   onClick: PropTypes.func,
 };
@@ -26,7 +26,7 @@ const ModalHeader = ({
   return (
     <div className={classNames(className, typeModalHeader)}>
       {children}
-      {closeTag ? <Button onClick={onClick} close></Button> : ""}
+      {closeTag ? <Button type="button" onClick={onClick} close></Button> : ""}
     </div>
   );
 };

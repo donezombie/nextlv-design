@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 const propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.any,
   className: PropTypes.string,
   bordered: PropTypes.bool,
   borderless: PropTypes.bool,

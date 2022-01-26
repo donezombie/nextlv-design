@@ -3,7 +3,7 @@ import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 
 const propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.any,
   className: PropTypes.string,
   check: PropTypes.bool,
 };
@@ -24,7 +24,7 @@ const Label = ({ children, className = "", check = false, ...rest }) => {
   }, [check]);
   //! Render
   return (
-    <label className={classNames(className, typeLabel)} for={rest.for}>
+    <label className={classNames(className, typeLabel)} Htmlfor={rest.for}>
       {children}
     </label>
   );

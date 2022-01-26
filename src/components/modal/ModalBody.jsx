@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 const propTypes = {
   className: PropTypes.string,
-  children: PropTypes.element,
+  children: PropTypes.any,
 };
 
 const ModalBody = ({ className, children }) => {

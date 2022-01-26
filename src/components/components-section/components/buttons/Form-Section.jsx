@@ -25,6 +25,10 @@ const FormSection = (props) => {
 
   const [open, setOpen] = useState(false);
 
+  const toggle = () => {
+    setOpen(!open);
+  };
+
   //! Function
 
   //! Render
@@ -43,7 +47,7 @@ const FormSection = (props) => {
 
         <FormGroup>
           <Label for="textarea">Text A rea</Label>
-          <Input type="textarea" rows="2" id="textarea" />
+          <Input type="textarea" rows="10" id="textarea" />
         </FormGroup>
 
         <Label>Radio Form</Label>
@@ -135,30 +139,31 @@ const FormSection = (props) => {
         >
           Modal
         </Button>
-        <Modal open={open}>
-          <ModalHeader
-            closeTag
-            onClick={(e) => {
-              e.preventDefault();
-              setOpen(false);
-            }}
-          >
-            Header Title
-          </ModalHeader>
-          <ModalBody>asdhjgafdajsdgfasdghu</ModalBody>
-          <ModalFooter>
-            <Button>Submit</Button>
-            <Button
-              variant="default"
-              onClick={(e) => {
-                e.preventDefault();
-                setOpen(false);
-              }}
-            >
-              Close
-            </Button>
-          </ModalFooter>
+
+        <Modal open={open} toggle={toggle}>
+          <>
+            <ModalHeader closeTag onClick={toggle}>
+              <span>Header Title</span>
+            </ModalHeader>
+            <ModalBody>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur hic, quisquam maiores, aliquam id facere omnis et
+                atque, maxime aperiam labore minima magnam nostrum earum dolore
+                ad pariatur temporibus provident.
+              </span>
+            </ModalBody>
+            <ModalFooter>
+              <>
+                <Button>Submit</Button>
+                <Button variant="default" onClick={toggle}>
+                  Close
+                </Button>
+              </>
+            </ModalFooter>
+          </>
         </Modal>
+        <Label></Label>
         <Button>Submit</Button>
       </Form>
     </Card>
